@@ -29,15 +29,11 @@
 }
 
 @media (max-width: 900px) {
-
     html { font-size: 15px; }
-
 }
 
 @media (max-width: 400px) {
-
     html { font-size: 13px; }
-
 }
 
 ::selection {
@@ -60,12 +56,12 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: white; 
+    background: #4d463c;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #999999; 
+    background: #999999;
   }
 
 .floating_message::-webkit-scrollbar {
@@ -90,60 +86,23 @@
 
 
 html, body {
-
     height: 100%;
     width: 100%;
-    background-color: #fffaf3;
+    background-color: #fffef8;
     margin: auto;
     overflow: hidden;
     font-size: 17px;
     -webkit-font-smoothing: antialiased;
-
-  }
+}
 
 ul, li {
-
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 
 p {
-
     margin: 0;
-
-}
-
-.my_name{
-    color:white !important;
-    background-color:#3c40c6;
-}
-
-.date{
-    color:#3c40c6 !important;
-}
-
-.banner_text{
-    font-family: Messina Sans Mono SemiBold;
-    font-size: 3vw;
-    letter-spacing: -.1vw;
-    color: black;
-  
-}
-
-.banner_text span{
-    color: #0be881;
-}
-
-.banner_text a{
-    color: #000;
-    text-decoration-style: dashed;
-
-}
-
-.banner_text a:hover{
-    text-decoration: underline;
 }
 
 input, textarea {
@@ -157,95 +116,43 @@ input, textarea {
 
 }
 
-#top_section{
-    width:100%;
-    height: auto;
+#right_section{
+    width:50%;
+    height: 100%;
+    background-image: url("../images/gutenberg.png");
+    background-size: auto 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+#left_section{
+    width:50%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .flex_container{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .flex_container_item{
     padding: 10px;
-    flex: 100%;
-    border-bottom: 1px solid #000;
-    
+    width: 100%;
+    display: block;
 }
 
-/* FOOTER */
-#footer_banner{
-    background-color: #000;
+.fci_title{
+    font-family: Messina Sans Mono;
+    font-size: 1vw;
+    color: black;
 }
 
-.footer_message_wrapper{
-    padding: 10px;
-    width: auto;
-    border-bottom: 1px solid #000;
-    height:auto;
-}
-
-.footer_message{
-    color: #ffd32a !important;
-    font-size: 1.5vw;
-    word-break: unset;
-    white-space: nowrap;
-    text-transform: uppercase;
-    margin-left: auto;
-     /* animation properties */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: banner-slide 45s linear infinite;
-    -webkit-animation: banner-slide 45s linear infinite;
-    animation: banner-slide 45s linear infinite;
-    &:hover {
-        animation-play-state: paused;
-    }
-}
-
-.footer_message a{
-    color: #ffd32a;
-}
-
-/*FOOTER BANNER ANIMATION*/
-/* for Firefox */
-@-moz-keyframes banner-slide {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-500%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes banner-slide {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-500%); }
-  }
-  
-  @keyframes banner-slide {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-500%);
-      -webkit-transform: translateX(-500%);
-      transform: translateX(-500%);
-    }
-  }
-
-
-.nav_item{
-    font-size: 5vw;
-    transition: 350ms cubic-bezier(0.37, 0, 0.63, 1) 7ms;
-    &:hover{
-        background-color: black;
-        color: #ff3f34;
-        cursor: pointer;
-        padding-left: 5px;
-    }
+.fci_text{
+    font-family: Messina Sans Mono SemiBold;
+    font-size: 2vw;
+    color: black;
 }
 
 /* Loading cover */
@@ -279,10 +186,6 @@ input, textarea {
     
 }
 
-@keyframes fadeInOut {
-    0% { opacity: 100%; }
-    100% { opacity: 0%; }
-  }
 
 
 
