@@ -1,0 +1,29 @@
+name: myportfolio
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: portfolio-proxy
+    ports:
+      - name: proxy-port
+        target: 80
+        published: "80"
+        protocol: tcp
+        app_protocol: http
+        mode: host
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: portfolio-web
+    expose:
+      - "8080/tcp"
+    volumes:
+      - portfolio-www:/www
+volumes:
+  portfolio-www:
+    external: true
+    name: portfolio-www
+
