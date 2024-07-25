@@ -1,34 +1,28 @@
-name: myportfolio
 services:
   proxy:
     build:
       context: .
       dockerfile: Dockerfile
       target: portfolio-proxy
+    container_name: portfolio-proxy
+    networks:
+      - portfolio-net
     ports:
-      - name: proxy-port
-        target: 80
-        published: "80"
-        protocol: tcp
-        app_protocol: http
-        mode: host
+      - "80:80/tcp"
     volumes:
-      - ./nginx/default-nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro 
-  
+      - ./nginx/default-nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+
   web:
     build:
       context: .
       dockerfile: Dockerfile
       target: portfolio-web
-    expose:
-      - "8080/tcp"
+    container_name: portfolio-web
+    networks:
+      - portfolio-net
     volumes:
-      - ./nginx/default-nginx-web.conf:/etc/nginx/conf.d/default.conf:ro 
-      - portfolio-www:/www
-volumes:
-  portfolio-www:
-    driver: local
-    driver_opts: 
-      type: none 
-      o: bind
-      device: /home/admin/portfolio
+      - ./nginx/default-nginx-web.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./src:/www
+
+networks:
+  portfolio-net: 
