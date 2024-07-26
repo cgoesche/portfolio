@@ -13,7 +13,8 @@ RUN mkdir conf.d/
 WORKDIR /
 
 FROM base AS portfolio-proxy
-EXPOSE 80/tcp
+RUN mkdir -p /etc/ssl/letsencrypt/
+EXPOSE 443/tcp
 CMD ["nginx","-g","daemon off;"]
 
 FROM base AS portfolio-web

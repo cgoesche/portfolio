@@ -8,9 +8,11 @@ services:
     networks:
       - portfolio-net
     ports:
-      - "80:80/tcp"
+      - "443:443/tcp"
     volumes:
+      - /etc/letsencrypt/:/etc/ssl/letsencrypt/:ro
       - ./nginx/default-nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
 
   web:
     build:
@@ -23,6 +25,7 @@ services:
     volumes:
       - ./nginx/default-nginx-web.conf:/etc/nginx/conf.d/default.conf:ro
       - ./src:/www
+    restart: unless-stopped
 
 networks:
-  portfolio-net: 
+  portfolio-net:
