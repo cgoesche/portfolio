@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version_tag: ${{ steps.versioning.outputs.VERSION_TAG }}
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
