@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.3.0] - 2025-02-27
+
+### 🚀 Features
+
+- *(ci)* Add Docker image build step - ([8b6450a](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/8b6450aa251d13583d9651ad7fc25dfd802d6957))
+
 ### [0.2.0] - 2025-02-27
 
 ### 🚀 Features
