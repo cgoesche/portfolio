@@ -2,7 +2,7 @@
   <div class="container flex fixed items-center mx-auto pt-2 pb-2 top-0 right-0 left-0 justify-between bg-white z-10">
   <header class="w-full flex items-center space-mono-regular justify-between">
     <div @click="mobileMenuActive = false">
-      <NuxtLink to="/"><img class="h-10" src="/icons/cgn-icon-blk.svg" alt="Black CGN SVG icon"/></NuxtLink>
+      <NuxtLink to="/"><img class="h-10" src="/icons/cgn-icon-blk.svg" alt="Black CGN SVG icon"></NuxtLink>
     </div>
 
     <nav>
@@ -22,7 +22,7 @@
       </ul>
 
       <ul id="mobile-nav-button" class="flex lg:hidden space-x-40 text-xs">
-        <a @click="mobileMenuActive = !mobileMenuActive" class="hover:cursor-pointer">MENU</a>
+        <a class="hover:cursor-pointer" @click="mobileMenuActive = !mobileMenuActive">MENU</a>
       </ul>
     </nav>
   </header>
@@ -33,16 +33,16 @@
       <nav class="text-center">
         <ul class="text-2xl">
           <li>
-            <NuxtLink @click="mobileMenuActive = false" ref="home-link" to="/">HOME</NuxtLink>
+            <NuxtLink ref="home-link" to="/" @click="mobileMenuActive = false">HOME</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="mobileMenuActive = false" ref="about-link" to="/about">ABOUT ME</NuxtLink>
+            <NuxtLink ref="about-link" to="/about" @click="mobileMenuActive = false">ABOUT ME</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="mobileMenuActive = false" ref="experience-link" to="/experience">EXPERIENCE</NuxtLink>
+            <NuxtLink ref="experience-link" to="/experience" @click="mobileMenuActive = false">EXPERIENCE</NuxtLink>
           </li>
           <li>
-            <NuxtLink @click="mobileMenuActive = false" ref="contact-link" to="/contact">CONTACT</NuxtLink>
+            <NuxtLink ref="contact-link" to="/contact" @click="mobileMenuActive = false">CONTACT</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -51,8 +51,6 @@
 
 </template>
 <script setup lang="ts">
-import {useTemplateRef} from "vue";
-
 const mobileMenuActive = ref(false);
 const route = useRoute();
 const homeLink = ref("HOME")
@@ -67,7 +65,7 @@ function clearLinkHighlight(){
   contactLink.value = "CONTACT";
 }
 
-function highlightCurrentLink(route: String) {
+function highlightCurrentLink(route: string) {
   switch (route.name) {
     case "index":
       homeLink.value = "> HOME <";
@@ -89,7 +87,7 @@ onMounted(() => {
   highlightCurrentLink(route);
 });
 
-watch(() => route.path, (to, from) => {
+watch(() => route.path, () => {
   clearLinkHighlight();
   highlightCurrentLink(route);
 });

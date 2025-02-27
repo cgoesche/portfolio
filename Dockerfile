@@ -30,6 +30,3 @@ EXPOSE 3000
 WORKDIR /app
 # This image has node.js as entrypoint so we can pass the index.mjs as argument directly
 CMD ["/app/.output/server/index.mjs"]
-
-
-

@@ -1,7 +1,7 @@
 <template>
   <div class="inline-block w-auto">
     <div id="find-out-link">
-      <slot></slot>
+      <slot/>
     </div>
   </div>
 </template>

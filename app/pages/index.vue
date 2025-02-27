@@ -2,6 +2,7 @@
   <PageRouteHeader>
     Home
   </PageRouteHeader>
+  <!-- eslint-disable vue/no-multiple-template-root -->
   <MainContentBody>
   <div class="max-w-2xl mx-auto pb-40 inter-300 text-3xl lg:text-5xl">
     <h3>Information technology caters perfectly to my <em>curiosity</em>
@@ -13,6 +14,7 @@
 
   </div>
   </MainContentBody>
+  <!-- eslint-enable -->
 </template>
 
 <script setup lang="ts">

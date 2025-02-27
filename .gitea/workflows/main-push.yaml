@@ -1,0 +1,32 @@
+name: Post PR Merge Action
+run-name: ${{ gitea.actor }} is building on ${{ gitea.repository }} 🚀
+on:
+  workflow_dispatch:
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install git-cliff
+        run: |
+          chmod +x ./install-cliff.sh
+          ./install-cliff.sh
+        working-directory: ./scripts
+
+      - name: Version bump, tag and update CHANGELOG.md
+        run: |
+          git remote -v
+          git config --global user.email "act_runner@foo.bar"
+          git config --global user.name "act_runner"
+          /usr/local/bin/git-cliff --bump -o CHANGELOG.md
+          git add CHANGELOG.md
+          git commit -m "ci: Push tag $(/usr/local/bin/git-cliff --bumped-version) and update CHANGELOG"
+          git tag $(/usr/local/bin/git-cliff --bumped-version)
+          git push origin main
+          git push --tags

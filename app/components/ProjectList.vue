@@ -1,18 +1,20 @@
 <template>
   <div class="inter-300">
-    <span @click="toggleAll" class="space-mono-regular text-lg text-gray-500">> Projects <</span>
+    <span class="space-mono-regular text-lg text-gray-500" @click="toggleAll">[ Projects ]</span>
     <br><br>
 
-    <div v-for="(obj, index) in CollapsibleObjects" class="collapsible-object-wrapper">
-      <div @click="CollapsibleObjects[index].collapsed = !CollapsibleObjects[index].collapsed" class="collapsible-list-label">
+    <div v-for="(obj, index) in CollapsibleObjects" :key="obj" class="collapsible-object-wrapper">
+      <div class="collapsible-list-label" @click="CollapsibleObjects[index].collapsed = !CollapsibleObjects[index].collapsed">
         <span class="text-xl lg:text-3xl">{{ obj.label }}</span>
         <span class="collapsible-list-button">{{ expandIcon(index) }}</span>
       </div>
       <div v-if="!CollapsibleObjects[index].collapsed" class="collapsible-list-wrapper">
-        <p class="mb-2" v-html="obj.project.description"></p>
-        <a v-bind:href="obj.project.url" target="_blank" class="text-xs lg:text-base hover:underline">{{ obj.project.url }}↗</a>
+        <!-- eslint-disable vue/no-v-html -->
+        <p class="mb-2" v-html="obj.project.description"/>
+        <!-- eslint-enable -->
+        <a :href="obj.project.url" target="_blank" class="text-xs lg:text-base hover:underline">{{ obj.project.url }}↗</a>
         <ul class="collapsible-list mt-2">
-          <li v-for="stack in obj.project.techStack" class="text-sm lg:text-xl">
+          <li v-for="stack in obj.project.techStack" :key="stack" class="text-sm lg:text-xl">
             {{ stack.item }}
           </li>
         </ul>
@@ -26,7 +28,7 @@
 type Project = {
   url: string;
   description: string;
-  techStack: Array<Object>;
+  techStack: Array<object>;
 }
 
 type CollapsibleObject = {

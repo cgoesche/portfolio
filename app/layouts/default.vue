@@ -1,11 +1,13 @@
 <template>
   <div class="container h-full lg:h-auto mx-auto">
     <MainContentBody>
-      <slot></slot>
+      <slot/>
     </MainContentBody>
   </div>
-  <Header />
-  <Footer />
+  <HeaderElem />
+  <!-- eslint-disable vue/no-multiple-template-root -->
+  <FooterElem />
+  <!-- eslint-enable -->
 </template>
 
 <script setup lang="ts">

@@ -1,15 +1,15 @@
 <template>
   <div class="inter-300">
-    <span @click="toggleAll" class="space-mono-regular text-lg text-gray-500">> Technologies <</span>
+    <span class="space-mono-regular text-lg text-gray-500" @click="toggleAll">[ Technologies ]</span>
     <br><br>
 
-    <div v-for="(obj, index) in CollapsibleObjects" class="collapse-list-wrapper">
-      <div @click="CollapsibleObjects[index].collapsed = !CollapsibleObjects[index].collapsed" class="collapse-list-label">
+    <div v-for="(obj, index) in CollapsibleObjects" :key="obj" class="collapse-list-wrapper">
+      <div  class="collapse-list-label" @click="CollapsibleObjects[index].collapsed = !CollapsibleObjects[index].collapsed">
         <span class="text-xl lg:text-3xl">{{ obj.label }}</span>
         <span class="collapse-list-button">{{ expandIcon(index) }}</span>
       </div>
-      <ul class="collapsible-list" v-if="!CollapsibleObjects[index].collapsed">
-        <li class="text-xl lg:text-xl" v-for="list in obj.list">
+      <ul v-if="!CollapsibleObjects[index].collapsed" class="collapsible-list">
+        <li v-for="list in obj.list" :key="list" class="text-xl lg:text-xl">
           {{ list.item }}
         </li>
       </ul>
@@ -22,7 +22,7 @@
 type CollapsibleObject = {
   label: string;
   collapsed: boolean;
-  list: Array<Object>;
+  list: Array<object>;
 };
 
 const CollapsibleObjects = ref<Array<CollapsibleObject>>([

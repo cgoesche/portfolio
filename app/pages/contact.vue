@@ -2,6 +2,7 @@
   <PageRouteHeader>
     Contact
   </PageRouteHeader>
+  <!-- eslint-disable vue/no-multiple-template-root -->
   <MainContentBody>
     <div class="display-inline lg:flex lg:space-x-10 pb-40 justify-center">
       <div class="space-mono-regular text-base lg:text-lg">
@@ -16,10 +17,10 @@
         <br><br>
         <span class="inter-300">Discord</span><br>
         <a href="https://discord.com/users/userc23o" target="_blank">@userc23o</a>
-
       </div>
     </div>
   </MainContentBody>
+  <!-- eslint-enable -->
 </template>
 <script setup lang="ts">
 </script>
