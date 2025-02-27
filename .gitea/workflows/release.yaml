@@ -1,10 +1,10 @@
-name: Post PR Merge Action
+name: Build and Release
 run-name: ${{ gitea.actor }} is building on ${{ gitea.repository }} 🚀
 on:
   workflow_dispatch:
 
 jobs:
-  integrate:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -12,6 +12,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Setup act_runner git identity
+        run: |
+          git config --global user.email "act_runner@foo.bar"
+          git config --global user.name "act_runner"
 
       - name: Install git-cliff
         run: |
@@ -19,13 +23,19 @@ jobs:
           ./install-cliff.sh
         working-directory: ./scripts
 
-      - name: Version bump, tag and update CHANGELOG.md
+      - name: Build Docker image and push to Hub
         run: |
-          git remote -v
-          git config --global user.email "act_runner@foo.bar"
-          git config --global user.name "act_runner"
+            echo "${{ secrets.DOCKER_HUB_TOKEN }}" | docker login -u ${{ DOCKER_HUB_USERNAME }}  --password-stdin
+            docker build -t christiangoeschel/portfolio:latest .
+            docker push christiangoeschel/portfolio:latest
+
+      - name: Generate CHANGELOG
+        run: |
           /usr/local/bin/git-cliff --bump -o CHANGELOG.md
           git add CHANGELOG.md
+
+      - name: Push CHANGELOG and new tag to 'main'
+        run: |
           git commit -m "ci: Push tag $(/usr/local/bin/git-cliff --bumped-version) and update CHANGELOG"
           git tag $(/usr/local/bin/git-cliff --bumped-version)
           git push origin main
