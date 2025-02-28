@@ -23,9 +23,6 @@
             </li>
           </ul>
         </nav>
-        <div class="text-center pb-5 lg:text-right lg:pb-0">
-          <p>This page was loaded <NuxtTime :datetime="Date.now() - 5 * 60 * 1000" relative/></p>
-        </div>
       </div>
     </footer>
   </div>

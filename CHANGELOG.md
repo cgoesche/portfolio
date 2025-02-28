@@ -27,4 +27,3 @@ This changelog documents all notable changes.
 
 
 Christian Goeschel Ndjomouo
-
