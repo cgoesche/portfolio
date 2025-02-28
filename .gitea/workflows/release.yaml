@@ -34,8 +34,10 @@ jobs:
       - id: versioning
         name: Bump version
         run: |
-          echo "VERSION_TAG=$(/usr/local/bin/git-cliff --bumped-version 2>/dev/null | tr -d 'v')" >> "$GITHUB_OUTPUT"
-          echo "New version: ${{ steps.versioning.outputs.VERSION_TAG }}"
+          echo "VERSION_TAG=$(/usr/local/bin/git-cliff --bumped-version 2>/dev/null | tr -d 'v')" >> "${GITHUB_OUTPUT}"
+          echo "New version: ${VERSION}"
+        env:
+          VERSION: ${{ steps.versioning.outputs.VERSION_TAG }}
 
       - name: Generate CHANGELOG
         run: |
@@ -55,7 +57,9 @@ jobs:
 
       - name: Publish CHANGELOG and push new tag to 'main'
         run: |
-          git commit -m "ci: Release $(/usr/local/bin/git-cliff --bumped-version 2>/dev/null) and update CHANGELOG"
-          git tag $(/usr/local/bin/git-cliff --bumped-version)
+          git commit -m "ci: Release ${VERSION} and update CHANGELOG"
+          git tag "v${VERSION}"
           git push origin main
           git push --tags
+        env:
+          VERSION: ${{ steps.versioning.outputs.VERSION_TAG }}
