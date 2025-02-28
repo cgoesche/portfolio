@@ -2,6 +2,17 @@
 
 This changelog documents all notable changes.
 
+### [0.4.0] - 2025-02-28
+
+### 🚀 Features
+
+- *(ci)* Add multi platform Docker builds - ([e31e19b](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/e31e19ba616d4a358dc9ba7e69abe13297e48697))
+
+### 🐛 Bug Fixes
+
+- Fix multi platform Docker build workflow - ([09f8d20](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/09f8d20eb2ee1f80def3503a9a94d0f1825b6390))
+- *(ci)* Fix syntax error in release workflow - ([6a33c09](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/6a33c09ff5e22fe419cfef5c1d8027304570c110))
+
 ### [0.3.1] - 2025-02-28
 
 ### 🐛 Bug Fixes
@@ -35,3 +46,4 @@ This changelog documents all notable changes.
 
 
 Christian Goeschel Ndjomouo
+
