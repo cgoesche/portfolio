@@ -60,7 +60,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${DOCKER_HUB_NAMESPACE}/${DOCKER_HUB_REPO}:${VERSION}
+          tags: ${{ env.DOCKER_HUB_NAMESPACE }}/${ env.DOCKER_HUB_REPO }}:${{ steps.versioning.outputs.VERSION_TAG }}
           platforms: linux/amd64,linux/arm64,linux/arm64/v8
 
     # - name: Build image
