@@ -1,9 +1,0 @@
-name: Commit message check
-
-runs:
-  using: "composite"
-  steps:
-    - name: Verify commit message format
-      run: |
-        COMMIT_MSG=$(git log --pretty=%s HEAD ^origin/main)
-        ./scripts/commit-msg-check.sh "${COMMIT_MSG}"
