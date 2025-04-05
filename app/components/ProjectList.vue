@@ -38,6 +38,11 @@ type CollapsibleObject = {
 };
 
 const CollapsibleObjects = ref<Array<CollapsibleObject>>([
+  { label: 'Arrakis', collapsed: true,
+    project: { url: 'https://github.com/cgoesche/arrakis',
+                    description: 'A lightweight Puppet g10k webhook API server',
+                    techStack: [{item: 'Golang'}]},
+  },
   { label: 'Genesis', collapsed: true,
     project: { url: 'https://gitea.christiangoeschel.com/christiangoeschel/genesis',
                     description: 'A simple command line tool to control the built-in keyboard backlight via the org.freedesktop.UPower D-Bus service.',
