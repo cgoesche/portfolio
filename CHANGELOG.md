@@ -2,6 +2,17 @@
 
 This changelog documents all notable changes.
 
+### [0.5.0] - 2025-05-21
+
+### 🚀 Features
+
+- Add arrakis API to the project list - ([7ce673a](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/7ce673a15017cee9d2c08ed4f4f7fcd64ddb3b25))
+- Add PAM-Insults project - ([0df2db5](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/0df2db5ea42e97d9ced6184ca86ad9cd4a8b6f44))
+
+### 🐛 Bug Fixes
+
+- Fix invalid named-value in release.yaml - ([41b9161](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/41b9161f0b62ae9ca5c9e565bcaea5173fd8b298))
+
 ### [0.4.0] - 2025-02-28
 
 ### 🚀 Features
