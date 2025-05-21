@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.6.0] - 2025-05-21
+
+### 🚀 Features
+
+- Add Arrakis API to the project list - ([987da3a](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/987da3a7fae870ae907fbe68b1a7aac1605294ce))
+
 ### [0.5.0] - 2025-05-21
 
 ### 🚀 Features
