@@ -49,12 +49,12 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
                     techStack: [{item: 'Golang'}]},
   },
   { label: 'Genesis', collapsed: true,
-    project: { url: 'https://gitea.christiangoeschel.com/christiangoeschel/genesis',
+    project: { url: 'https://github.com/cgoesche/genesis',
                     description: 'A simple command line tool to control the built-in keyboard backlight via the org.freedesktop.UPower D-Bus service.',
                     techStack: [{item: 'Golang'}, {item: 'D-Bus'}]},
   },
   { label: 'Asahi Linux Debian Installer', collapsed: true,
-    project: { url: 'https://gitea.christiangoeschel.com/christiangoeschel/asahi-debian',
+    project: { url: 'https://github.com/cgoesche/asahi-debian',
     description: 'In this project I bootstrapped, pre-partitioned and automated the system configuration of a Debian installation image,' +
         ' which served as base image in the Asahi Linux installer for Apple Silicon devices.<br><br>' +
         'During the process I learned how to mount files as loop devices, partition a disk, use rsync, create system critical configuration files in /etc, ' +
@@ -62,12 +62,12 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
     techStack: [{item: 'Bash'}, {item: 'mkosi'}]},
   },
   { label: 'SHX', collapsed: true,
-    project: { url: 'https://gitea.christiangoeschel.com/christiangoeschel/shx',
+    project: { url: 'https://github.com/cgoesche/shx',
       description: 'A simple command line tool that searches for the shared file extents of a given file on a CoW enabled filesystem.',
       techStack: [{item: 'Golang'}]},
   },
   { label: 'MyDocs', collapsed: true,
-    project: { url: 'https://docs.christiangoeschel.com',
+    project: { url: 'https://github.com/cgoesche/mydocs',
       description: 'MyDocs is my personal knowledge base website that is built and served using Mkdocs Materials in Docker,' +
           ' and hosted in my Homelab server exposed to the public via a public reverse proxy instance.',
       techStack: [{item: 'Docker'}, {item: 'Yaml'}, {item: 'Markdown'}, {item: 'JavaScript'}]},
