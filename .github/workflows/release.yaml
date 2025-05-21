@@ -22,8 +22,8 @@ jobs:
 
       - name: Setup act_runner git identity
         run: |
-          git config --global user.email "act_runner@foo.bar"
-          git config --global user.name "act_runner"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Install git-cliff
         run: |
