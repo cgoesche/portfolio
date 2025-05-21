@@ -1,5 +1,5 @@
 name: Build and Release
-run-name: ${{ gitea.actor }} is building on ${{ gitea.repository }} 🚀
+run-name: ${{ github.actor }} is building on ${{ github.repository }} 🚀
 on:
   workflow_dispatch:
 
