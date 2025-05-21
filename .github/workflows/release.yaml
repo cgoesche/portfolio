@@ -63,13 +63,6 @@ jobs:
           tags: ${{ env.DOCKER_HUB_NAMESPACE }}/${{ env.DOCKER_HUB_REPO }}:${{ steps.versioning.outputs.VERSION_TAG }}
           platforms: linux/amd64,linux/arm64,linux/arm64/v8
 
-    # - name: Build image
-    #   run: |
-    #     docker build -t ${DOCKER_HUB_NAMESPACE}/${DOCKER_HUB_REPO}:${VERSION} .
-    #     docker push ${DOCKER_HUB_NAMESPACE}/${DOCKER_HUB_REPO}:${VERSION}
-    #   env:
-    #     VERSION: ${{ steps.versioning.outputs.VERSION_TAG }}
-
       - name: Publish CHANGELOG and push new tag to 'main'
         run: |
           git commit -m "ci: Release ${VERSION} and update CHANGELOG"

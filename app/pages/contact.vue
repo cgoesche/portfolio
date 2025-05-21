@@ -9,8 +9,8 @@
         <span class="inter-300">Email</span><br>
         <a href="mailto:cgoesc2@wgu.edu">cgoesc2@wgu.edu</a>
         <br><br>
-        <span class="inter-300">Gitea</span><br>
-        <a href="https://gitea.christiangoeschel.com/christiangoeschel/" target="_blank">gitea.christiangoeschel.com/christiangoeschel/</a>
+        <span class="inter-300">GitHub</span><br>
+        <a href="https://github.com/cgoesche" target="_blank">github.com/cgoesche</a>
         <br><br>
         <span class="inter-300">LinkedIn</span><br>
         <a href="https://www.linkedin.com/in/christian-gn/" target="_blank">linkedin.com/in/christian-gn/</a>

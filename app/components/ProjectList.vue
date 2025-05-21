@@ -38,10 +38,10 @@ type CollapsibleObject = {
 };
 
 const CollapsibleObjects = ref<Array<CollapsibleObject>>([
-  { label: 'Arrakis', collapsed: true,
-    project: { url: 'https://github.com/cgoesche/arrakis',
-                    description: 'A lightweight Puppet g10k webhook API server',
-                    techStack: [{item: 'Golang'}]},
+  { label: 'PAM-Insults', collapsed: true,
+    project: { url: 'https://github.com/cgoesche/pam-insults',
+                    description: ' A PAM module that insults users when authentications fail ',
+                    techStack: [{item: 'C'}, {item: 'PAM'}, {item: 'Linux'}]},
   },
   { label: 'Genesis', collapsed: true,
     project: { url: 'https://gitea.christiangoeschel.com/christiangoeschel/genesis',
