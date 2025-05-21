@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.6.1] - 2025-05-21
+
+### 🐛 Bug Fixes
+
+- Replace Gitea URLs with GitHub in project list - ([870d3da](https://gitea.christiangoeschel.com/christiangoeschel/portfolio/commit/870d3da28ae3627fb361f31feda33a10a189d449))
+
 ### [0.6.0] - 2025-05-21
 
 ### 🚀 Features
