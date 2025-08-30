@@ -38,6 +38,13 @@ type CollapsibleObject = {
 };
 
 const CollapsibleObjects = ref<Array<CollapsibleObject>>([
+  { label: 'Contributor to util-linux @ kernel.org', collapsed: true,
+    project: { url: 'https://github.com/util-linux/util-linux/commits/master/?author=cgoesche',
+                    description: ' Some of the contributions I have made to the upstream util-linux kernel.org package ' +
+		    'https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=Christian+Goeschel+Ndjomouo' +
+		    'https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=cgoesche',
+                    techStack: [{item: 'C'}, {item: 'Linux'}, {item: 'Systems Programming'}]},
+  },
   { label: 'PAM-Insults', collapsed: true,
     project: { url: 'https://github.com/cgoesche/pam-insults',
                     description: ' A PAM module that insults users when authentications fail ',
