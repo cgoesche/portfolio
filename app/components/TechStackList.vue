@@ -29,7 +29,7 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
     {label: 'Monitoring/Observability', collapsed: true, list: [{ item: 'Node Exporter (Prometheus)' }, { item: 'Grafana' }, { item: 'OpsGenie' }, { item: 'auditd (GNU/Linux)' }]},
     {label: 'Database Management', collapsed: true, list: [{ item: 'MySQL' }, { item: 'PostgreSQL' }, { item: 'SQLite' } ]},
     {label: 'Webservers', collapsed: true, list: [{ item: 'Nginx' }, { item: 'Apache 2.0' }]},
-    {label: 'Virtualization/Containerization', collapsed: true, list: [{ item: 'Docker' }, { item: 'Proxmox' }, {item: 'Kubernetes'}, {item: 'VMWare Fusion'}]},
+    {label: 'Virtualization/Containerization', collapsed: true, list: [{ item: 'Docker' }, { item: 'Proxmox' }, { item: 'QEMU' }, { item: 'Openstack' }, {item: 'Kubernetes'}, {item: 'VMWare Fusion'}]},
     {label: 'Configuration Management Systems', collapsed: true, list: [{ item: 'Puppet' }, { item: 'Ansible' }]},
     {label: 'Networking Tools', collapsed: true, list: [{ item: 'iptables' }, { item: 'nftables' }, { item: 'nmap' }, { item: 'Wireshark' }, { item: 'Tailscale' }, { item: 'Wireguard' }, { item: 'tcpdump' }]},
 ]);
