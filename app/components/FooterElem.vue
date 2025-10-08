@@ -4,7 +4,7 @@
       <div class="object-center text-center pb-5">
         <p class="text-sm">Copyright © ({{ current_year }}) Christian Goeschel Ndjomouo. All Rights Reserved.<br>
         The source code for this website is licensed under <a href="https://opensource.org/license/mit" target="_blank">The MIT license ↗</a><br/>
-      Version <a href="https://github.com/cgoesche/portfolio" target="_blank">{{ package_version }}</a></p>
+      Release version <a href="https://github.com/cgoesche/portfolio" target="_blank">{{ package_version }}</a></p>
       </div>
 
       <div class="text-center pb-5">
