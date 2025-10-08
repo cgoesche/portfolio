@@ -44,6 +44,11 @@ jobs:
           /usr/local/bin/git-cliff --bump -o CHANGELOG.md
           git add CHANGELOG.md
 
+      - name: Update version tag
+        run: |
+          sed -i "s/const package_version = \".*\"/const package_version = \"${VERSION}\"/" ./FooterElem.vue
+        working-directory: ./app/components
+
       - name: Set up Qemu
         uses: docker/setup-qemu-action@v1
 
