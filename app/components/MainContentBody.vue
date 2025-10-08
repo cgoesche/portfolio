@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20">
+  <div class="display-block mt-20">
     <slot/>
   </div>
 </template>

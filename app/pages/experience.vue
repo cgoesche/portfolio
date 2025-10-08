@@ -1,7 +1,4 @@
 <template>
-  <PageRouteHeader>
-    Experience
-  </PageRouteHeader>
   <!-- eslint-disable vue/no-multiple-template-root -->
   <MainContentBody>
     <div class="max-w-4xl mt-5 mx-auto pb-40">
@@ -17,3 +14,9 @@
   </MainContentBody>
   <!-- eslint-enable -->
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Experience',
+})
+</script>

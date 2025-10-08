@@ -1,25 +1,26 @@
 <template>
-  <div class="container lg:fixed mx-auto items-center pt-2 pb-2 bottom-0 right-0 left-0 space-mono-regular text-xs bg-white z-10">
-    <footer class="mx-auto lg:flex justify-between">
-      <div class="object-center text-center pb-5 lg:text-left lg:pb-0">
-        <p class="text-xs">Portfolio website for Christian Goeschel Ndjomouo - <a href="https://github.com/cgoesche/portfolio" target="_blank">(v0.6.2)</a><br>
-        ({{ current_year }})  This page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0 ↗</a></p>
+  <div class="container w-md mx-auto items-center pt-2 pb-2 bottom-0 right-0 left-0 computer-modern-regular text-xs bg-white z-10">
+    <footer class="mx-auto justify-between">
+      <div class="object-center text-center pb-5">
+        <p class="text-sm">Copyright © ({{ current_year }}) Christian Goeschel Ndjomouo. All Rights Reserved.<br>
+        The source code for this website is licensed under <a href="https://opensource.org/license/mit" target="_blank">The MIT license ↗</a><br/>
+      Version <a href="https://github.com/cgoesche/portfolio" target="_blank">0.6.2</a></p>
       </div>
 
-      <div class="text-center pb-5 lg:text-left lg:pb-0">
+      <div class="text-center pb-5">
         <nav>
-          <ul class="flex justify-center space-x-5 lg:justify-end">
+          <ul class="flex justify-center space-x-5">
             <li class="nav-item">
-              <a href="https://github.com/cgoesche" target="_blank">GitHub ↗</a>
+              <a href="https://github.com/cgoesche" target="_blank">GitHub</a>
             </li>
             <li class="nav-item">
-              <a href="https://www.linkedin.com/in/christian-gn/" target="_blank">LinkedIn ↗</a>
+              <a href="https://www.linkedin.com/in/christian-gn/" target="_blank">LinkedIn</a>
             </li>
             <li class="nav-item">
-              <a href="https://discordapp.com/users/userc23o" target="_blank">Discord ↗</a>
+              <a href="mailto:cgoesc2@wgu.edu">Email</a>
             </li>
             <li class="nav-item">
-              <a href="mailto:cgoesc2@wgu.edu">Email ↗</a>
+              <a href="mailto:cgoesc2@wgu.edu">Resume</a>
             </li>
           </ul>
         </nav>

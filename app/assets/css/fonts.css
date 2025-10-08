@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Computer-Modern-Normal;
+  src: url(../fonts/computer-modern/cmunrm.ttf);
+  font-display: swap;
+}
+
+/* Commit Mono */
+@font-face {
+  font-family: Commit-Mono-400-Italic;
+  src: url(../fonts/CommitMonoV143/CommitMono-400-Italic.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Commit-Mono-400-Regular;
+  src: url(../fonts/CommitMonoV143/CommitMono-400-Regular.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Commit-Mono-700-Italic;
+  src: url(../fonts/CommitMonoV143/CommitMono-700-Italic.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Commit-Mono-700-Regular;
+  src: url(../fonts/CommitMonoV143/CommitMono-700-Regular.otf);
+  font-display: swap;
+}

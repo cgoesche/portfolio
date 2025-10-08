@@ -1,20 +1,16 @@
 <template>
   <div class="inter-300">
-    <span class="space-mono-regular text-lg text-gray-500" @click="toggleAll">[ Technologies ]</span>
-    <br><br>
-
     <div v-for="(obj, index) in CollapsibleObjects" :key="obj" class="collapse-list-wrapper">
       <div  class="collapse-list-label" @click="CollapsibleObjects[index].collapsed = !CollapsibleObjects[index].collapsed">
-        <span class="text-xl lg:text-3xl">{{ obj.label }}</span>
+        <span class="text-md lg:text-2xl">{{ obj.label }}</span>
         <span class="collapse-list-button">{{ expandIcon(index) }}</span>
       </div>
       <ul v-if="!CollapsibleObjects[index].collapsed" class="collapsible-list">
-        <li v-for="list in obj.list" :key="list" class="text-xl lg:text-xl">
+        <li v-for="list in obj.list" :key="list">
           {{ list.item }}
         </li>
       </ul>
     </div>
-
   </div>
 </template>
 <script setup lang="ts">
@@ -35,7 +31,7 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
     {label: 'Webservers', collapsed: true, list: [{ item: 'Nginx' }, { item: 'Apache 2.0' }]},
     {label: 'Virtualization/Containerization', collapsed: true, list: [{ item: 'Docker' }, { item: 'Proxmox' }, {item: 'Kubernetes'}, {item: 'VMWare Fusion'}]},
     {label: 'Configuration Management Systems', collapsed: true, list: [{ item: 'Puppet' }, { item: 'Ansible' }]},
-    {label: 'Networking', collapsed: true, list: [{ item: 'Cisco IOS' }, { item: 'Tailscale' }, { item: 'Wireguard' }]},
+    {label: 'Networking Tools', collapsed: true, list: [{ item: 'iptables' }, { item: 'nftables' }, { item: 'nmap' }, { item: 'Wireshark' }, { item: 'Tailscale' }, { item: 'Wireguard' }, { item: 'tcpdump' }]},
 ]);
 
 function expandIcon(i: number){

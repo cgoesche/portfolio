@@ -1,11 +1,8 @@
 <template>
-  <div class="inter-300">
-    <span class="space-mono-regular text-lg text-gray-500" @click="toggleAll">[ Projects ]</span>
-    <br><br>
-
+  <div class="computer-modern-regular">
     <div v-for="(obj, index) in CollapsibleObjects" :key="obj" class="collapsible-object-wrapper">
       <div class="collapsible-list-label" @click="CollapsibleObjects[index].collapsed = !CollapsibleObjects[index].collapsed">
-        <span class="text-xl lg:text-3xl">{{ obj.label }}</span>
+        <span class="text-md lg:text-2xl">{{ obj.label }}</span>
         <span class="collapsible-list-button">{{ expandIcon(index) }}</span>
       </div>
       <div v-if="!CollapsibleObjects[index].collapsed" class="collapsible-list-wrapper">
@@ -39,10 +36,8 @@ type CollapsibleObject = {
 
 const CollapsibleObjects = ref<Array<CollapsibleObject>>([
   { label: 'Contributor to util-linux @ kernel.org', collapsed: true,
-    project: { url: 'https://github.com/util-linux/util-linux/commits/master/?author=cgoesche',
-                    description: ' Some of the contributions I have made to the upstream util-linux kernel.org package ' +
-		    'https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=Christian+Goeschel+Ndjomouo' +
-		    'https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=cgoesche',
+    project: { url: 'https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=Christian+Goeschel+Ndjomouo',
+                    description: ' Some of the contributions I have made to the upstream util-linux kernel.org package ',
                     techStack: [{item: 'C'}, {item: 'Linux'}, {item: 'Systems Programming'}]},
   },
   { label: 'PAM-Insults', collapsed: true,
@@ -60,7 +55,7 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
                     description: 'A simple command line tool to control the built-in keyboard backlight via the org.freedesktop.UPower D-Bus service.',
                     techStack: [{item: 'Golang'}, {item: 'D-Bus'}]},
   },
-  { label: 'Asahi Linux Debian Installer', collapsed: true,
+  { label: 'Asahi Linux Debian Image', collapsed: true,
     project: { url: 'https://github.com/cgoesche/asahi-debian',
     description: 'In this project I bootstrapped, pre-partitioned and automated the system configuration of a Debian installation image,' +
         ' which served as base image in the Asahi Linux installer for Apple Silicon devices.<br><br>' +
@@ -72,12 +67,6 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
     project: { url: 'https://github.com/cgoesche/shx',
       description: 'A simple command line tool that searches for the shared file extents of a given file on a CoW enabled filesystem.',
       techStack: [{item: 'Golang'}]},
-  },
-  { label: 'MyDocs', collapsed: true,
-    project: { url: 'https://github.com/cgoesche/mydocs',
-      description: 'MyDocs is my personal knowledge base website that is built and served using Mkdocs Materials in Docker,' +
-          ' and hosted in my Homelab server exposed to the public via a public reverse proxy instance.',
-      techStack: [{item: 'Docker'}, {item: 'Yaml'}, {item: 'Markdown'}, {item: 'JavaScript'}]},
   },
   { label: 'Portfolio', collapsed: true,
     project: { url: 'https://www.christiangoeschel.com',
