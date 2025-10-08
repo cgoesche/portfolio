@@ -2,6 +2,17 @@
 
 This changelog documents all notable changes.
 
+### [0.7.0] - 2025-10-08
+
+### 🚀 Features
+
+- Add util-linux contribution project - ([29e45b0](https://github.com/cgoesche/portfolio/commit/29e45b0d11bb9dc63c46491f655a0da89649afb6))
+- New website design - ([b553aa2](https://github.com/cgoesche/portfolio/commit/b553aa22a120dc6b76b2319f5b0042892ad4d4bf))
+
+### ⚙️ Miscellaneous Tasks
+
+- Update .pre-commit-config.yaml - ([870a068](https://github.com/cgoesche/portfolio/commit/870a0689bf7ce11729cd72305688f54efbf251c6))
+
 ### [0.6.2] - 2025-05-21
 
 ### 🐛 Bug Fixes
@@ -75,3 +86,4 @@ This changelog documents all notable changes.
 
 
 Christian Goeschel Ndjomouo
+
