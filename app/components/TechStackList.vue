@@ -60,7 +60,7 @@ div {
 }
 
 .collapsible-list {
-  @apply inline-block h-auto lg:flex lg:space-x-5 p-2;
+  @apply inline-block h-auto pl-2;
 }
 
 .collapse-list-button {
