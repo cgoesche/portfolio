@@ -4,12 +4,12 @@
         <strong id="Abstract"><a href="#Abstract">Abstract</a></strong>
         <br><br>
         As you have probably already figured out, my name is <strong>Christian Goeschel Ndjomouo</strong>.
-        I am a <i>Software Engineering Undergraduate</i> from Montreal, Canada and have been working 
+        I am a <i>Software Engineering Undergraduate</i> from Montreal, Canada and have been working
         as <i>IT Administrator at OVHcloud Canada</i> for about 2 years.
         <br><br>
         I am also an active development contributor to <a class="underline" href="https://en.wikipedia.org/wiki/Util-linux" target="_blank">util-linux</a>,
         the project that provides core utilities to the GNU/Linux operating system.
-        Some of the most notable tools that I have worked on, in this project, are: <a :href="manpages_urls['kill']" target="_blank">kill</a>, 
+        Some of the most notable tools that I have worked on, in this project, are: <a :href="manpages_urls['kill']" target="_blank">kill</a>,
         <a :href="manpages_urls['more']" target="_blank">more</a>, <a :href="manpages_urls['getopt']" target="_blank">getopt</a>,
         <a :href="manpages_urls['lscpu']" target="_blank">lscpu</a> and <a :href="manpages_urls['swapon']" target="_blank">swapon</a>.
         If you wish to find out more about my work in this regard, you can look at a more comprehensive list <a :href="misc_urls['util-linux-git']" target="_blank">here</a>.
@@ -17,7 +17,7 @@
         <strong id="Experience"><a href="#Experience">Experience</a></strong>
         <br><br>
         At my current job I am often creating or refactoring Bash scripts and improving the Puppet code used for deployments of Ubuntu workstations and
-        Debian kiosk systems. Occassionally, I will also build kernel modules for incompatible hardware to reduce operational costs created by unnecessary material waste, and avoid process 
+        Debian kiosk systems. Occassionally, I will also build kernel modules for incompatible hardware to reduce operational costs created by unnecessary material waste, and avoid process
         disruptions that can harm business continuity. If needed I also review automation processes and (re)design CI/CD pipelines that entail solid testing and build workflows.
         It can also happen that I have to mount and setup an entire 42U server rack with networking equipment and integrate these in the office network.
         <br><br>
