@@ -35,7 +35,10 @@ jobs:
         name: Bump version
         run: |
           echo "VERSION_TAG=$(/usr/local/bin/git-cliff --bumped-version 2>/dev/null | tr -d 'v')" >> "${GITHUB_OUTPUT}"
-          echo "New version: ${VERSION}"
+
+      - name: Report new release version
+        run: |
+          echo "New release version: ${VERSION}"
         env:
           VERSION: ${{ steps.versioning.outputs.VERSION_TAG }}
 
@@ -48,6 +51,8 @@ jobs:
         run: |
           sed -i "s/const package_version = \".*\"/const package_version = \"${VERSION}\"/" ./FooterElem.vue
         working-directory: ./app/components
+        env:
+          VERSION: ${{ steps.versioning.outputs.VERSION_TAG }}
 
       - name: Set up Qemu
         uses: docker/setup-qemu-action@v1
