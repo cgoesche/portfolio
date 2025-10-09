@@ -2,6 +2,16 @@
 
 This changelog documents all notable changes.
 
+### [0.7.1] - 2025-10-09
+
+### 🐛 Bug Fixes
+
+- Change release version wording - ([f79fff7](https://github.com/cgoesche/portfolio/commit/f79fff78da79c2236321009718d83a916c22c0e9))
+- (TechStackComponent.vue) vertically align list items - ([e10d2a5](https://github.com/cgoesche/portfolio/commit/e10d2a5a54451e08af22450a3077c42fbd8b109c))
+- Add QEMU and Openstack to tech stack - ([dfb073e](https://github.com/cgoesche/portfolio/commit/dfb073eb45473c08739e4e5978b45a58cb8d33b8))
+- Fix formatting style - ([0ad2684](https://github.com/cgoesche/portfolio/commit/0ad2684ce00f7e70300dc4653b7cda01d7f39bea))
+- Remove PAM-Insults project - ([49d8729](https://github.com/cgoesche/portfolio/commit/49d8729f35901281554cedacfc1a95df865cc821))
+
 ### [0.7.0] - 2025-10-08
 
 ### 🚀 Features
