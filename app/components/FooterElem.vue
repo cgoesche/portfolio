@@ -3,7 +3,7 @@
     <footer class="mx-auto justify-between">
       <div class="object-center text-center pb-5">
         <p class="text-xs lg:text-sm">Copyright © ({{ current_year }}) Christian Goeschel Ndjomouo. All Rights Reserved.<br>
-        The source code for this website is licensed under <a href="https://opensource.org/license/mit" target="_blank">The MIT license ↗</a><br/>
+        The source code for this website is licensed under <a class="underline" href="https://opensource.org/license/mit" target="_blank">The MIT license</a><br/>
       Release version <a class ="underline" href="https://github.com/cgoesche/portfolio" target="_blank">{{ package_version }}</a></p>
       </div>
 
@@ -20,7 +20,7 @@
               <a href="mailto:cgoesc2@wgu.edu">Email</a>
             </li>
             <li class="nav-item">
-              <a href="mailto:cgoesc2@wgu.edu">Resume</a>
+              <a href="https://medium.com/@christiangn" target="_blank">Medium</a>
             </li>
           </ul>
         </nav>

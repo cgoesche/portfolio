@@ -6,7 +6,7 @@
         <br/>
         <p class="commit-mono-400-regular text-sm text-center">GPG Fingerprint: 687C 76D2 D8B0 5DD0 4176  E6C5 C475 62BC 894A 0FD0</p>
         <br/>
-        <pre class="commit-mono-400-regular text-sm text-center">
+        <pre class="commit-mono-400-regular text-xs lg:text-sm text-center">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGjQEGgBEADaprq9M+yaAsbbtHk3hH/kAzduBqYDCrXubxlxY90ReUMQEYIe
