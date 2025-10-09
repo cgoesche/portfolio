@@ -1,12 +1,12 @@
 <template>
-  <div class="flex items-center mx-auto pt-2 pb-2 top-0 right-0 left-0 justify-between bg-white z-10">
-  <header class="w-md mx-auto items-center computer-modern-regular">
+  <div class="items-center text-center mx-auto pt-2 pb-2 top-0 right-0 left-0 bg-white z-10">
+  <header class="w-full mx-auto items-center text-center computer-modern-regular">
     <div class="mx-auto text-center pt-5" @click="mobileMenuActive = false">
       <NuxtLink to="/"><img class="mx-auto h-10" src="/icons/cgn-icon-blk.svg" alt="Black CGN SVG icon"></NuxtLink>
     </div>
 
     <nav>
-      <ul id="desktop-nav-list" class="pt-5 flex space-x-10 text-sm">
+      <ul id="desktop-nav-list" class="pt-5 text-center space-x-10 text-sm">
         <li class="nav-item">
           <NuxtLink :class="{underlinelink: currentIsHome}" ref="home-link" to="/">Home</NuxtLink>
         </li>

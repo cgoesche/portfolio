@@ -1,5 +1,5 @@
 <template>
-<div style="width: 540px;" class="mx-auto lg:space-x-10 pb-40">
+<div class="responsive-container mx-auto lg:space-x-10 pb-40">
       <div class="text-sm lg:text-xl">
         <p class="computer-modern-regular">If you want to contact me directly please use <a class="underline" href="mailto:cgoesc2@wgu.edu">cgoesc2@wgu.edu</a>.
           And if you need to encrypt the messages, use my public key below.</p>

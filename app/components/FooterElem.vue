@@ -1,8 +1,8 @@
 <template>
-  <div class="container w-md mx-auto items-center pt-2 pb-2 bottom-0 right-0 left-0 computer-modern-regular text-xs bg-white z-10">
+  <div class="responsive-container w-md mx-auto items-center pt-2 pb-2 bottom-0 right-0 left-0 computer-modern-regular bg-white z-10">
     <footer class="mx-auto justify-between">
       <div class="object-center text-center pb-5">
-        <p class="text-sm">Copyright © ({{ current_year }}) Christian Goeschel Ndjomouo. All Rights Reserved.<br>
+        <p class="text-xs lg:text-sm">Copyright © ({{ current_year }}) Christian Goeschel Ndjomouo. All Rights Reserved.<br>
         The source code for this website is licensed under <a href="https://opensource.org/license/mit" target="_blank">The MIT license ↗</a><br/>
       Release version <a class ="underline" href="https://github.com/cgoesche/portfolio" target="_blank">{{ package_version }}</a></p>
       </div>

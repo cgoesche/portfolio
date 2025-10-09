@@ -1,5 +1,5 @@
 <template>
-<div style="width: 540px;" class="mx-auto pb-40 space-mono-regular text-xl lg:text-2xl link_underline">
+<div class="responsive-container mx-auto pb-40 space-mono-regular text-xl lg:text-2xl link_underline">
         <p class="computer-modern-regular text-sm lg:text-xl">
         <strong id="Introduction"><a href="#Introduction">Introduction</a></strong>
         <br><br>

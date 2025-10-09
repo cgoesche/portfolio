@@ -1,5 +1,5 @@
 <template>
-<div style="width: 540px;" class="w-540 mx-auto pb-40 space-mono-regular text-xl lg:text-2xl">
+<div class="responsive-container mx-auto pb-40 space-mono-regular text-xl lg:text-2xl">
     <p class="computer-modern-regular text-sm lg:text-xl">
         Here you will soon find an assortment of my thoughts around
         topics that interest me the most. This can include, but is not limited to,
