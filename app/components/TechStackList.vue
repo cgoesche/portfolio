@@ -22,16 +22,54 @@ type CollapsibleObject = {
 };
 
 const CollapsibleObjects = ref<Array<CollapsibleObject>>([
-    {label: 'Operating Systems', collapsed: true, list: [{ item: 'GNU/Linux' }, { item: 'macOS' }, { item: 'FreeBSD' }, { item: 'Windows' }]},
-    {label: 'Programming/Scripting', collapsed: true, list: [{ item: 'Golang' }, { item: 'Bash' }, { item: 'Python' }, { item: 'C' },
-        { item: 'Javascript/Typescript' }, { item: 'Java' }, { item: 'PowerShell' }]},
-    {label: 'Frameworks', collapsed: true, list: [{ item: 'Bubbletea (Golang)' }, { item: 'NuxtJS' }]},
-    {label: 'Monitoring/Observability', collapsed: true, list: [{ item: 'Node Exporter (Prometheus)' }, { item: 'Grafana' }, { item: 'OpsGenie' }, { item: 'auditd (GNU/Linux)' }]},
-    {label: 'Database Management', collapsed: true, list: [{ item: 'MySQL' }, { item: 'PostgreSQL' }, { item: 'SQLite' } ]},
-    {label: 'Webservers', collapsed: true, list: [{ item: 'Nginx' }, { item: 'Apache 2.0' }]},
-    {label: 'Virtualization/Containerization', collapsed: true, list: [{ item: 'Docker' }, { item: 'Proxmox' }, { item: 'QEMU' }, { item: 'Openstack' }, {item: 'Kubernetes'}, {item: 'VMWare Fusion'}]},
-    {label: 'Configuration Management Systems', collapsed: true, list: [{ item: 'Puppet' }, { item: 'Ansible' }]},
-    {label: 'Networking Tools', collapsed: true, list: [{ item: 'iptables' }, { item: 'nftables' }, { item: 'nmap' }, { item: 'Wireshark' }, { item: 'Tailscale' }, { item: 'Wireguard' }, { item: 'tcpdump' }]},
+    {label: 'Operating Systems', collapsed: true, list: [ { item: 'GNU/Linux' },
+                                                          { item: 'macOS' },
+                                                          { item: 'FreeBSD' },
+                                                          { item: 'Windows' }]
+                                                        },
+    {label: 'Programming/Scripting', collapsed: true, list: [ { item: 'C' },
+                                                              { item: 'Bash' },
+                                                              { item: 'Golang' },
+                                                              { item: 'awk'},
+                                                              { item: 'Python' },
+                                                              { item: 'Javascript/Typescript' },
+                                                              { item: 'Java' },
+                                                              { item: 'PowerShell' }]
+                                                            },
+    {label: 'Frameworks', collapsed: true, list: [  { item: 'Bubbletea (Golang)' },
+                                                    { item: 'NuxtJS' }]
+                                                  },
+    {label: 'Monitoring/Observability', collapsed: true, list: [  { item: 'Node Exporter (Prometheus)' },
+                                                                  { item: 'Grafana' },
+                                                                  { item: 'OpsGenie' },
+                                                                  { item: 'auditd (GNU/Linux)' }]
+                                                                },
+    {label: 'Database Management', collapsed: true, list: [ { item: 'MySQL' },
+                                                            { item: 'PostgreSQL' },
+                                                            { item: 'SQLite3' } ]
+                                                          },
+    {label: 'Webservers', collapsed: true, list: [  { item: 'Nginx' },
+                                                    { item: 'Apache 2.0' }]
+                                                  },
+    {label: 'Virtualization/Containerization', collapsed: true, list: [ { item: 'Docker' },
+                                                                        { item: 'Proxmox' },
+                                                                        { item: 'QEMU' },
+                                                                        { item: 'Openstack' },
+                                                                        { item: 'Kubernetes'},
+                                                                        { item: 'VMWare Fusion'}]
+                                                                      },
+    {label: 'Configuration Management Systems', collapsed: true, list: [  { item: 'Puppet' },
+                                                                          { item: 'Ansible' }]
+                                                                        },
+    {label: 'Networking Tools', collapsed: true, list: [  { item: 'iptables' },
+                                                          { item: 'nftables' },
+                                                          { item: 'nmap' },
+                                                          { item: 'Wireshark' },
+                                                          { item: 'Tailscale' },
+                                                          { item: 'Wireguard' },
+                                                          { item: 'tcpdump' },
+                                                          { item: 'iproute2' }]
+                                                        },
 ]);
 
 function expandIcon(i: number){
