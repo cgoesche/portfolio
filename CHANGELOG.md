@@ -2,6 +2,20 @@
 
 This changelog documents all notable changes.
 
+### [0.8.0] - 2025-10-09
+
+### 🚀 Features
+
+- Implement responsive design - ([aecb112](https://github.com/cgoesche/portfolio/commit/aecb11262bec01499c7cb6d9d3e294cc9ba499d6))
+
+### 🐛 Bug Fixes
+
+- Improve introduction paragraph - ([de05684](https://github.com/cgoesche/portfolio/commit/de05684947dba2dfee7ca70db97c93b7cedca6a0))
+- Add link to 'underline' Tailwind class - ([b8fbbc3](https://github.com/cgoesche/portfolio/commit/b8fbbc31648892bd833a0f2314e8247cfae0508b))
+- Update blog page - ([d39f73a](https://github.com/cgoesche/portfolio/commit/d39f73af463799ad06ac680626369ab235276f5a))
+- Fix minor grammar mistake - ([b144b7a](https://github.com/cgoesche/portfolio/commit/b144b7aaaf2e1b3828d42b28adf294f78fb63303))
+- Minor improvements - ([6c29b1d](https://github.com/cgoesche/portfolio/commit/6c29b1d2eae27be01f812634ea4577d5fe903c1a))
+
 ### [0.7.1] - 2025-10-09
 
 ### 🐛 Bug Fixes
