@@ -3,7 +3,7 @@
     <p class="computer-modern-regular text-sm lg:text-xl">
         Here you will soon find an assortment of my thoughts around
         topics that interest me the most. This can include, but is not limited to,
-        technology applied sciences, history, political/philosophical ideas, and even sports.
+        technology and applied sciences, history, political/philosophical ideas, and even sports.
         <br/><br/>
         It is also highly probable that I will blog about current projects
         that I am working on, technical problem resolutions, GNU/Linux related trivia and much more.
