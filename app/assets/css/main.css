@@ -1,9 +1,4 @@
 em {
-        @apply text-blue-400
-}
-
-i {
-        text-decoration: underline !important;
         @apply underline
 }
 

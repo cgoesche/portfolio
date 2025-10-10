@@ -4,39 +4,45 @@
         <strong id="Introduction"><a href="#Introduction">Introduction</a></strong>
         <br><br>
         As you have probably already figured out, my name is <strong>Christian Goeschel Ndjomouo</strong>.
-        I am a <i>Software Engineering Undergraduate</i> from Montreal, Canada and have been working
-        as <i>IT Administrator at OVHcloud Canada</i> for about 2 years.
+        I am a <em>Software Engineering Undergraduate</em> from Montreal, Canada and have been working
+        as <em>IT Administrator at OVHcloud Canada</em> for about 2 years.
         <br><br>
         I am also an active contributor to the development of <a class="underline" href="https://en.wikipedia.org/wiki/Util-linux" target="_blank">util-linux</a>,
-        the project that provides core utilities for the GNU/Linux operating system.
+        the project that provides base utilities for the GNU/Linux operating system.
         Some of the most notable tools I have worked on in this project are <a :href="manpages_urls['kill']" target="_blank">kill</a>,
         <a :href="manpages_urls['more']" target="_blank">more</a>, <a :href="manpages_urls['getopt']" target="_blank">getopt</a>,
         <a :href="manpages_urls['lscpu']" target="_blank">lscpu</a> and <a :href="manpages_urls['swapon']" target="_blank">swapon</a>.
         For more information about my work in this area, please refer to a more comprehensive list <a :href="misc_urls['util-linux-git']" target="_blank">here</a>.
         <br><br>
-        To describe myself, I would claim that I am a particularly curious, highly self-driven and pragmatic person with a hint of idealistic notions. I am not afraid to challenge my own assumptions and am open-minded
-        enough to learn from my mistakes and adapt to newly gained insights. I prefer a systematic approach to engineering problems, as I believe it creates well-structured, logical, and repeatable steps in problem 
-        identification and resolution, which helps me better understand the relationship between the different components of a system and their limitations. That, in itself, creates opportunities to learn, improve, and 
-        mitigate future risks. 
+        To describe myself, I would claim that I am a <em>particularly curious</em>, <em>highly self-driven</em> and <em>pragmatic</em> person with a <em>few idealistic notions</em>. I am not afraid to challenge my 
+        own assumptions and am open-minded enough to learn from my mistakes and adapt to newly gained insights. I prefer a <i>systematic approach to engineering problems</i>, as I believe it creates well-structured, logical, 
+        and repeatable steps in problem identification and resolution, which can help me better understand the relationship between the different components of a system and its limitations. That, in itself, creates 
+        opportunities to learn, improve, look at problems more critically, take well-informed engineering decisions that help prevent shortcomings due to technical debt, etc., and, lastly, mitigate future risks.
         <br><br>
-        Lastly, I strive to put in a decent amount of effort in developing reliable, maintainable, scalable, and secure code that follows ethical approaches, primarily utilitarian and deontological. 
+        Lastly, I strive to put in a decent amount of effort in developing reliable, maintainable, scalable, and secure code that follow utilitarian and deontological approaches. 
         <br><br>
         
         <strong id="Experience"><a href="#Experience">Experience</a></strong>
         <br><br>
-        At my current job I am often creating or refactoring Bash scripts and improving the Puppet code used for deployments of Ubuntu workstations and
-        Debian kiosk systems. Occassionally, I will also build kernel modules for incompatible hardware to prevent decommissions that increase operational costs through unnecessary material waste, and avoid process
-        disruptions that can harm business continuity. If needed I also review automation processes and (re)design CI/CD pipelines that entail careful testing and build workflows.
-        It can also happen that I have to mount and setup an entire 42U server rack with networking equipment and integrate these in the office network.
+        At my current job, I manage a wide range of IT operations, including the deployment, management, and maintenance of internal employee workstations, networking equipment, small-form-factor computer systems, 
+        Cisco conferencing devices, and other related technologies. I also take responsibility for the IT assets in our Montreal office space, which means that I manage the IT stockrooms, assess the acquisition of new equipment 
+        and handle device lifecycle management with environmental sustainability in mind.
+        <br><br>
+        On multiple occasions, I support the SOC department in achieving its goal of delivering secure IT systems in accordance to industry standards such as PCI-DSS and SecNumCloud, by improving internal user applications and security tools, conducting
+        performing penetration tests, and patching security vulnerabilities, among other tasks. 
+        <br><br>
+        Aside from that, I often create or refactor Bash scripts and improve the Puppet code used for deploying Ubuntu workstations and
+        Debian kiosk systems. Sometimes, I also build Linux kernel modules for incompatible hardware to prevent decommissioning that increases operational costs through unnecessary material waste, and to avoid process
+        disruptions that can harm business continuity. If needed, I also review automation processes and (re)design CI/CD pipelines that entail careful testing and build workflows.
         <br><br>
         There is much more, but I think it is more convincing to demonstrate experience with projects. For that, below you will find a non-exhaustive list of my most recent projects and the different technologies that I 
         have worked with.
         <br><br>
-        <i>Technologies</i>
+        <em>Technologies</em>
         <br><br>
         <TechStackList/>
         <br><br>
-        <i>Projects</i>
+        <em>Projects</em>
         <br><br>
         <ProjectList/>
         </p>
