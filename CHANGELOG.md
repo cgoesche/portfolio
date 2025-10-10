@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.8.2] - 2025-10-10
+
+### 🐛 Bug Fixes
+
+- (FooterElem.vue) fix Github tag tree URL - ([da5152b](https://github.com/cgoesche/portfolio/commit/da5152b7ae5ebd951bcf225e86923ebf1676a8ac))
+
 ### [0.8.1] - 2025-10-10
 
 ### 🐛 Bug Fixes
