@@ -2,6 +2,13 @@
 
 This changelog documents all notable changes.
 
+### [0.8.1] - 2025-10-10
+
+### 🐛 Bug Fixes
+
+- Use Github commit tag URL in release version anchor - ([d44f3e0](https://github.com/cgoesche/portfolio/commit/d44f3e0cdc67f528af43b96b902132d9bc8eacc4))
+- Improve introduction paragraph - ([de047da](https://github.com/cgoesche/portfolio/commit/de047dac2d4a1bd66e8d9df88335ee8daa308fe6))
+
 ### [0.8.0] - 2025-10-09
 
 ### 🚀 Features
