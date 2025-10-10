@@ -4,7 +4,7 @@
       <div class="object-center text-center pb-5">
         <p class="text-xs lg:text-sm">Copyright © ({{ current_year }}) Christian Goeschel Ndjomouo. All Rights Reserved.<br>
         The source code for this website is licensed under <a class="underline" href="https://opensource.org/license/mit" target="_blank">The MIT license</a><br/>
-        Release version <a class ="underline" :href="git_tag_url" target="_blank">{{ package_version }}</a></p>
+        Release version <a class ="underline" :href="git_tag_tree_url" target="_blank">{{ package_version }}</a></p>
       </div>
 
       <div class="text-center pb-5">
@@ -30,7 +30,7 @@
 </template>
 <script setup lang="ts">
 const package_version = "unknown";
-const git_tag_url = "https://github.com/cgoesche/portfolio/tags/v" + package_version;
+const git_tag_tree_url = "https://github.com/cgoesche/portfolio/tree/v" + package_version;
 
 const year = new Date().getFullYear()
 const current_year = ref(null)
