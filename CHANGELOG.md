@@ -2,6 +2,18 @@
 
 This changelog documents all notable changes.
 
+### [0.8.3] - 2026-02-03
+
+### 🐛 Bug Fixes
+
+- Use "unreleased" for development version tag in the footer - ([d700227](https://github.com/cgoesche/portfolio/commit/d7002271daa49d0ffac8fa16ce37afa3cee6f570))
+
+### ⚙️ Miscellaneous Tasks
+
+- Update to nodejs LTS version 24.13.0 - ([7b4d43f](https://github.com/cgoesche/portfolio/commit/7b4d43f2c80578c899c00231f2433fd80998b35a))
+- Remove dead code - ([bc94cdb](https://github.com/cgoesche/portfolio/commit/bc94cdbf69425552c7d5bbb5c77ccdf305611a16))
+- Update util-linux contributions - ([64323db](https://github.com/cgoesche/portfolio/commit/64323dbeb11da86639bc461c188a6b523eb5fbf0))
+
 ### [0.8.2] - 2025-10-10
 
 ### 🐛 Bug Fixes
