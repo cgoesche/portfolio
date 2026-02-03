@@ -7,17 +7,17 @@
         I am a <em>Software Engineering Undergraduate</em> from Montreal, Canada and have been working
         as <em>IT Administrator at OVHcloud Canada</em> for about 2 years.
         <br><br>
-        I am also an active contributor to the development of <a class="underline" href="https://en.wikipedia.org/wiki/Util-linux" target="_blank">util-linux</a>,
-        the project that provides base utilities for the GNU/Linux operating system.
-        Some of the most notable tools I have worked on in this project are <a :href="manpages_urls['kill']" target="_blank">kill</a>,
-        <a :href="manpages_urls['more']" target="_blank">more</a>, <a :href="manpages_urls['getopt']" target="_blank">getopt</a>,
-        <a :href="manpages_urls['lscpu']" target="_blank">lscpu</a> and <a :href="manpages_urls['swapon']" target="_blank">swapon</a>.
-        For more information about my work in this area, please refer to a more comprehensive list <a :href="misc_urls['util-linux-git']" target="_blank">here</a>.
+        I am also a collaborator and author for <a class="underline" href="https://en.wikipedia.org/wiki/Util-linux" target="_blank">util-linux</a>;
+        the project that provides essential system utilities and libraries for the GNU/Linux operating system.
+        Some of the most notable tools I have worked on in this project are <a :href="manpages_urls['kill']" target="_blank">getino(1)</a>,
+        <a :href="manpages_urls['kill']" target="_blank">kill(1)</a>, <a :href="manpages_urls['more']" target="_blank">more(1)</a>, <a :href="manpages_urls['getopt']" target="_blank">getopt(1)</a>,
+        <a :href="manpages_urls['lscpu']" target="_blank">lscpu(1)</a> and <a :href="manpages_urls['swapon']" target="_blank">swapon(8)</a>.
+        For a more comprehensive list please visit <a :href="misc_urls['util-linux-git']" target="_blank">here</a>.
         <br><br>
-        To describe myself, I would claim that I am a <em>particularly curious</em>, <em>highly self-driven</em> and <em>pragmatic</em> person with a <em>few idealistic notions</em>. I am not afraid to challenge my 
-        own assumptions and am open-minded enough to learn from my mistakes and adapt to newly gained insights. I prefer a <i>systematic approach to engineering problems</i>, as I believe it creates well-structured, logical, 
-        and repeatable steps in problem identification and resolution, which can help me better understand the relationship between the different components of a system and its limitations. That, in itself, creates 
-        opportunities to learn, improve, look at problems more critically, take well-informed engineering decisions that help prevent shortcomings due to technical debt, etc., and, lastly, mitigate future risks.
+        To describe myself, I would claim that I am a <em>particularly curious</em>, <em>highly self-driven</em> and <em>pragmatic</em> person with a <em>few idealistic notions</em>. I am not afraid to challenge my
+        own assumptions and am open-minded enough to learn from my mistakes and adapt to newly gained insights. I prefer a <i>systematic approach to engineering problems</i>, as I believe it creates well-structured, logical,
+        and repeatable steps in problem identification and resolution, which can help me better understand the relationship between the different components of a system and its limitations. That, in itself, creates
+        opportunities to learn, improve, look at problems more critically, take well-informed engineering decisions that help prevent shortcomings due to technical debt and, lastly, mitigate future risks.
         <br><br>
         Lastly, I strive to put in a decent amount of effort in developing reliable, maintainable, scalable, and secure code that follow utilitarian and deontological approaches. 
         <br><br>
@@ -51,10 +51,11 @@
 
 <script setup lang="ts">
 const misc_urls = {
-        "util-linux-git": "https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=Christian+Goeschel+Ndjomouo"
+        "util-linux-git": "https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=cgoesc2@wgu.edu"
 }
 
 const manpages_urls = {
+        "getino": "https://man7.org/linux/man-pages/man1/getino.1.html",
         "getopt": "https://man7.org/linux/man-pages/man1/getopt.1.html",
         "kill": "https://man7.org/linux/man-pages/man1/kill.1.html",
         "lscpu": "https://man7.org/linux/man-pages/man1/lscpu.1.html",
