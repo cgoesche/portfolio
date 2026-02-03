@@ -29,7 +29,7 @@
   </div>
 </template>
 <script setup lang="ts">
-const package_version = "unknown";
+const package_version = "unreleased";
 const git_tag_tree_url = "https://github.com/cgoesche/portfolio/tree/v" + package_version;
 
 const year = new Date().getFullYear()
