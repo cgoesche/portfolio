@@ -1,4 +1,4 @@
-FROM node:18.12.1-alpine AS build
+FROM node:24.13-alpine3.22 AS build
 # Create Nuxt app directory
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY ./ /app
 RUN npm run build
 
 # Build the release image
-FROM gcr.io/distroless/nodejs:18 AS release
+FROM gcr.io/distroless/nodejs24-debian13 AS release
 LABEL org.opencontainers.image.authors="cgoesc2@wgu.edu"
 LABEL maintainer="Christian Goeschel Ndjomouo <cgoesc2@wgu.edu>"
 LABEL description="Portfolio NUXTJs App"
