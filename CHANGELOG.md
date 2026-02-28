@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.8.4] - 2026-02-28
+
+### ⚙️ Miscellaneous Tasks
+
+- Minor adjustment - ([a62e408](https://github.com/cgoesche/portfolio/commit/a62e408ed817c1ef3c8c794fdb14b6b10b23e2e0))
+
 ### [0.8.3] - 2026-02-03
 
 ### 🐛 Bug Fixes
