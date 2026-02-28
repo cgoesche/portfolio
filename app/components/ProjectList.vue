@@ -38,7 +38,7 @@ const CollapsibleObjects = ref<Array<CollapsibleObject>>([
   { label: 'Contributor to util-linux @ kernel.org', collapsed: true,
     project: { url: 'https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git/log/?qt=author&q=Christian+Goeschel+Ndjomouo',
                     description: ' Some of the contributions I have made to the upstream util-linux kernel.org package ',
-                    techStack: [{item: 'C'}, {item: 'Linux'}, {item: 'Systems Programming'}]},
+                    techStack: [{item: 'C'}, {item: 'Linux'}, {item: 'Systems Programming'}, {item: 'Bash'}]},
   },
   { label: 'Arrakis', collapsed: true,
     project: { url: 'https://github.com/cgoesche/arrakis',
