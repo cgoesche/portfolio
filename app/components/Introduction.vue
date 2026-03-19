@@ -9,7 +9,7 @@
         <br><br>
         I am also a collaborator and author for <a class="underline" href="https://en.wikipedia.org/wiki/Util-linux" target="_blank">util-linux</a>;
         the project that provides essential system utilities and libraries for the GNU/Linux operating system.
-        Some of the most notable tools I have worked on in this project are <a :href="manpages_urls['getino']" target="_blank">getino(1)</a>,
+        Some of the most notable tools I have worked on in this project are <a :href="manpages_urls['getino']" target="_blank">getino(1)</a>, <a :href="manpages_urls['agetty']" target="_blank">agetty(8)</a>
         <a :href="manpages_urls['kill']" target="_blank">kill(1)</a>, <a :href="manpages_urls['more']" target="_blank">more(1)</a>, <a :href="manpages_urls['getopt']" target="_blank">getopt(1)</a>,
         <a :href="manpages_urls['lscpu']" target="_blank">lscpu(1)</a> and <a :href="manpages_urls['swapon']" target="_blank">swapon(8)</a>.
         For a more comprehensive list please visit <a :href="misc_urls['util-linux-git']" target="_blank">here</a>.
@@ -55,6 +55,7 @@ const misc_urls = {
 }
 
 const manpages_urls = {
+        "agetty": "https://man7.org/linux/man-pages/man8/agetty.8.html",
         "getino": "https://man7.org/linux/man-pages/man1/getino.1.html",
         "getopt": "https://man7.org/linux/man-pages/man1/getopt.1.html",
         "kill": "https://man7.org/linux/man-pages/man1/kill.1.html",
