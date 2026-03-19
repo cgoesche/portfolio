@@ -2,6 +2,16 @@
 
 This changelog documents all notable changes.
 
+### [0.9.0] - 2026-03-19
+
+### 🚀 Features
+
+- Add agetty to list of open source contributions - ([1f1207b](https://github.com/cgoesche/portfolio/commit/1f1207b2d79a1b1bf29a9e48df4ea6296a01556c))
+
+### 🐛 Bug Fixes
+
+- Incorrect manpage URL for getino - ([645ac2e](https://github.com/cgoesche/portfolio/commit/645ac2e9b53a6838fb8d027d17e5c63ead53e29a))
+
 ### [0.8.4] - 2026-02-28
 
 ### ⚙️ Miscellaneous Tasks
