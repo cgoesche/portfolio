@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.9.1] - 2026-03-19
+
+### 🐛 Bug Fixes
+
+- Missing comma - ([2cc297b](https://github.com/cgoesche/portfolio/commit/2cc297bcb0a36c79bf7a42616801aac806c85043))
+
 ### [0.9.0] - 2026-03-19
 
 ### 🚀 Features
