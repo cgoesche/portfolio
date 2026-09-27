@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.9.2] - 2026-09-27
+
+### 🐛 Bug Fixes
+
+- Update introduction page - ([996ddf2](https://github.com/cgoesche/portfolio/commit/996ddf259715ff0baab4ba4fcc5b08800e8028f9))
+
 ### [0.9.1] - 2026-03-19
 
 ### 🐛 Bug Fixes
