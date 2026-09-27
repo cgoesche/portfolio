@@ -2,6 +2,12 @@
 
 This changelog documents all notable changes.
 
+### [0.9.3] - 2026-09-27
+
+### 🐛 Bug Fixes
+
+- Invalid hyperlink and missing line break - ([010ca71](https://github.com/cgoesche/portfolio/commit/010ca71864270e4624fa20f69d6013028e960572))
+
 ### [0.9.2] - 2026-09-27
 
 ### 🐛 Bug Fixes
