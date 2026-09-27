@@ -5,7 +5,7 @@
         <br><br>
         As you have probably already figured out, my name is <strong>Christian Goeschel Ndjomouo</strong>.
         I am a <em>Site Reliability Engineer</em> and <em>Systems Programmer</em> from Montreal, Canada currently
-        working for <em><a href="https://ovh.ca" target="_blank">OVHcloud Canada</a></em>.
+        working for <em><a href="https://ovh.com" target="_blank">OVHcloud Canada</a></em>.
         <br><br>
         I am also a collaborator and author for <a class="underline" href="https://en.wikipedia.org/wiki/Util-linux" target="_blank">util-linux</a>;
         the project that provides essential system utilities and libraries for the GNU/Linux operating system.
@@ -21,6 +21,7 @@
         <br><br>
 
         <strong id="Experience"><a href="#Experience">Experience</a></strong>
+        <br><br>
         <em>Technologies</em>
         <br><br>
         <TechStackList/>
